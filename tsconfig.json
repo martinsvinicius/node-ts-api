@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", //es version
+    "moduleResolution": "Node", //ambiente nodejs
+    "module": "CommonJS",
+    "lib": ["ES2019"], //inclui por default todos os tipos do ES2019
+    "sourceMap": true, //mapa para debugar a aplicação
+    "outDir": "dist", //codigo compilado
+    "strict": true, //strict mode
+    "noImplicitAny": true, //Gera erros em expressões e declarações com anytype
+    "strictFunctionTypes": true,
+    "noImplicitThis": true, //Gera erros em this expressions com anytype
+    "resolveJsonModule": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "baseUrl": ".", //root do projeto
+    "paths": { //paths para utilizar nas urls do projeto
+      "@src/*": ["./src/*"],
+      "@test/*": ["./test/*"],
+    },
+    "rootDirs": [ //roots do projeto
+      "./src",
+      "./test"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/*",
+    "dist"
+  ]
+}
