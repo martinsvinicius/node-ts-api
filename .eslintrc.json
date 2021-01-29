@@ -18,10 +18,17 @@
         "ts": "never"
       }
     ],
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": ["error", "windows"],
+    "no-trailing-spaces": "off"
   },
   "settings": {
     "import/resolver": {
+      "alias": {
+        "map": [
+          ["@src", "./src"]
+        ],
+        "extensions": [".ts", ".js", ".jsx", ".json"]
+      },
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
